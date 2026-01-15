@@ -1,0 +1,45 @@
+{
+  "name": "sukan-m",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@number-flow/react": "^0.5.10",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.26.2",
+    "google-auth-library": "^10.5.0",
+    "google-spreadsheet": "^5.0.2",
+    "googleapis": "^169.0.0",
+    "gsap": "^3.13.0",
+    "lenis": "^1.3.16",
+    "lucide-react": "^0.562.0",
+    "motion": "^12.23.24",
+    "next": "^16.1.0",
+    "nodemailer": "^7.0.6",
+    "react": "^19.2.3",
+    "react-countup": "^6.5.3",
+    "react-dom": "^19.2.3",
+    "react-hot-toast": "^2.6.0",
+    "react-icons": "^5.5.0",
+    "react-intersection-observer": "^10.0.0",
+    "swiper": "^12.0.3",
+    "tailwind-merge": "^3.3.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.13",
+    "@types/node": "^25.0.8",
+    "@types/nodemailer": "^7.0.1",
+    "@types/react": "^19.2.8",
+    "@types/react-dom": "^19.2.3",
+    "babel-plugin-react-compiler": "19.1.0-rc.3",
+    "eslint": "^9.39.1",
+    "eslint-config-next": "^16.0.1",
+    "tailwindcss": "^4.1.13",
+    "typescript": "^5.9.3"
+  }
+}
