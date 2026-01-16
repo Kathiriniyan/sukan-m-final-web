@@ -3,7 +3,7 @@ import nodemailer from 'nodemailer';
 
 export async function POST(req: NextRequest) {
     try {
-        // 1. Parse JSON Data (Specific to Contact Form)
+        // 1. Parse foem Data 
         const { name, phone, email, message } = await req.json();
 
         // 2. Validate Fields
@@ -23,22 +23,22 @@ export async function POST(req: NextRequest) {
             );
         }
 
-        // 4. Configure SMTP Transporter (Hostinger)
+        // 4. Configure 
         const transporter = nodemailer.createTransport({
             host: process.env.SMTP_HOST || 'smtp.hostinger.com',
             port: Number(process.env.SMTP_PORT) || 465,
-            secure: true, // True for port 465
+            secure: true, 
             auth: {
-                user: process.env.SMTP_USER, // website@sukan-m.com
-                pass: process.env.SMTP_PASS, // Your password
+                user: process.env.SMTP_USER, 
+                pass: process.env.SMTP_PASS, 
             },
         });
 
         // 5. Define Email Options
         const mailOptions = {
-            from: `"Sukan Contact" <${process.env.SMTP_USER}>`, // Sends from website@...
-            to: process.env.RECEIVER_EMAIL || 'info@sukan-m.com', // Sends to info@...
-            replyTo: email, // IMPORTANT: Allows you to reply directly to the customer
+            from: `"Sukan Contact" <${process.env.SMTP_USER}>`, 
+            to: process.env.RECEIVER_EMAIL || 'info@sukan-m.com', 
+            replyTo: email, 
             subject: `New Contact Enquiry from ${name}`,
             text: `
           New Contact Enquiry Received!

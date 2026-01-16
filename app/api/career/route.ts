@@ -29,22 +29,22 @@ export async function POST(req: NextRequest) {
         const arrayBuffer = await cvFile.arrayBuffer();
         const buffer = Buffer.from(arrayBuffer);
 
-        // 4. Configure SMTP Transporter (Hostinger)
+        // 4. Configure 
         const transporter = nodemailer.createTransport({
             host: process.env.SMTP_HOST || 'smtp.hostinger.com',
             port: Number(process.env.SMTP_PORT) || 465,
             secure: true, // True for port 465
             auth: {
-                user: process.env.SMTP_USER, // website@sukan-m.com
-                pass: process.env.SMTP_PASS, // Your password
+                user: process.env.SMTP_USER, 
+                pass: process.env.SMTP_PASS, //  password checking....
             },
         });
 
         // 5. Define Email Options
         const mailOptions = {
-            from: `"Sukan Careers" <${process.env.SMTP_USER}>`, // Sends from website@sukan-m.com
-            to: process.env.RECEIVER_EMAIL || 'info@sukan-m.com', // Sends to info@sukan-m.com
-            replyTo: email, // Allows you to reply directly to the candidate
+            from: `"Sukan Careers" <${process.env.SMTP_USER}>`, 
+            to: process.env.RECEIVER_EMAIL || 'info@sukan-m.com', 
+            replyTo: email, 
             subject: `New Job Application: ${role} - ${fullName}`,
             text: `
 New Application Received!
