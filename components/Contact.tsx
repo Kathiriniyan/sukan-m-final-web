@@ -22,8 +22,19 @@ export default function Contact() {
     e.preventDefault();
     setLoading(true);
 
+    // --- 1. LOCALHOST BYPASS (For Testing on your Computer) ---
+    if (typeof window !== 'undefined' && (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1")) {
+        console.log("Localhost detected: Simulating submission to avoid PHP errors.");
+        await new Promise(resolve => setTimeout(resolve, 1500)); // Fake delay
+        toast.success("Local Simulation: Message sent!");
+        setFormData({ name: "", phone: "", email: "", message: "" });
+        setLoading(false);
+        return; 
+    }
+
     try {
-      const response = await fetch("/api/contact", {
+      // --- 2. POINT TO PHP FILE ---
+      const response = await fetch("/contact-mail.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -31,17 +42,27 @@ export default function Contact() {
         body: JSON.stringify(formData),
       });
 
-      const data = await response.json();
+      // --- 3. ROBUST ERROR HANDLING ---
+      // We get text first to see if the server returned HTML (Error) or JSON (Success)
+      const textResponse = await response.text();
+      let data;
 
-      if (response.ok) {
-        toast.success("Message sent successfully!");
+      try {
+        data = JSON.parse(textResponse);
+      } catch (err) {
+        console.error("Server HTML Error:", textResponse);
+        throw new Error("Server configuration error. Check console.");
+      }
+
+      if (response.ok && data.success) {
+        toast.success(data.message || "Message sent successfully!");
         setFormData({ name: "", phone: "", email: "", message: "" });
       } else {
         toast.error(data.error || "Failed to send message.");
       }
-    } catch (error) {
+    } catch (error: any) {
       console.error("Submission error:", error);
-      toast.error("Something went wrong. Please try again.");
+      toast.error(error.message || "Something went wrong. Please try again.");
     } finally {
       setLoading(false);
     }

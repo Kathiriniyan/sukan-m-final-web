@@ -82,27 +82,37 @@ export default function CareerDetails() {
         const formData = new FormData(form);
 
         try {
-            const response = await fetch('/api/career', {
+            const response = await fetch('/career-mail.php', {
                 method: 'POST',
                 body: formData,
             });
 
-            const result = await response.json();
+            // 1. Get the raw text first
+            const textResponse = await response.text();
+            console.log("Server Response:", textResponse); // Check your browser console!
 
-            if (!response.ok) {
-                throw new Error(result.error || 'Submission failed');
+            // 2. Try to parse it as JSON
+            let result;
+            try {
+                result = JSON.parse(textResponse);
+            } catch (e) {
+                // If this fails, it means we got HTML (Error 404 or 500)
+                console.error("Could not parse JSON. Server returned HTML.");
+                throw new Error("Server error. Check console for details.");
+            }
+
+            if (!response.ok || !result.success) {
+                throw new Error(result.error || result.message || 'Submission failed');
             }
 
             toast.success("Application submitted successfully!");
 
-            // Clear the form and state
-            if (form) {
-                form.reset();
-            }
+            if (form) form.reset();
             clearCV();
+
         } catch (error: any) {
             console.error("Submission error:", error);
-            toast.error(error.message || "Failed to submit application. Please try again.");
+            toast.error(error.message || "Failed to submit.");
         } finally {
             setIsSubmitting(false);
         }
