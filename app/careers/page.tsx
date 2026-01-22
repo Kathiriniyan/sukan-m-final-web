@@ -21,9 +21,9 @@ export default function CareersPage() {
           <div className="row">
             <div className="col-lg-12">
               <div className="title-area-left">
-                <span className="pre">Career Sukan M</span>
+                <span className="pre">Join our team</span>
                 <span className="bg-title">Career</span>
-                <h1 className="title rts-text-anime-style-1">Career With Sukan M</h1>
+                <h1 className="title rts-text-anime-style-1">Career With Sukan Marketing</h1>
               </div>
             </div>
           </div>
@@ -163,7 +163,7 @@ export default function CareersPage() {
             <div className="col-lg-12">
               <div className="title-style-five center mb--40">
                 <span className="pre">Gallery</span>
-                <h2 className="title rts-text-anime-style-1">Life At Sukan M</h2>
+                <h2 className="title rts-text-anime-style-1">Life At Sukan Marketing</h2>
               </div>
             </div>
           </div>

@@ -34,7 +34,7 @@ export default function RootLayout({
         <link
           rel="shortcut icon"
           type="image/x-icon"
-          href="/assets/images/fav1.svg"
+          href="/assets/images/fav.svg"
         />
 
         {/* Template CSS */}

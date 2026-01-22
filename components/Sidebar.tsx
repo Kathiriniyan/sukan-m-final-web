@@ -16,8 +16,7 @@ const Sidebar = () => {
                 </Link>
                 <div className="body d-none d-xl-block">
                     <p className="disc">
-                        We must explain to you how all seds this mistakens idea denouncing pleasures and praising account.
-                        All seds this mistakens idea denouncing pleasures.
+                        We will manage for you how all sets this business goal organizing accounts and tracking warehouse. All sets this business goal organizing accounts.
                     </p>
                     <div className="get-in-touch">
                         {/* title */}

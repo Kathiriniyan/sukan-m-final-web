@@ -94,8 +94,7 @@ export default function Footer() {
 
               {/* Description */}
               <p className="disc text-white/70 text-[15px] leading-relaxed mb-6">
-                Felis consquat magnis fames sagittis ultrices plasodales porttitor
-                quisque ultrice tempor turpis.
+                Sukan Marketing manages global supply accounts operations logistics warehouse services backend systems support.
               </p>
 
               {/* Social icons */}
@@ -164,7 +163,7 @@ export default function Footer() {
                   </div>
                   <div className="leading-tight">
                     <h6 className="text-white font-semibold text-[16px] mb-1">
-                      Call Us 24/7
+                      Call Us
                     </h6>
                     <Link
                       href="tel:+94761287897"
