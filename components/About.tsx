@@ -29,12 +29,12 @@ export default function About() {
 
               <div className="counter-about-area">
                 <h2 className="counter title">
-                  <span className="odometer" data-count="5">
+                  <span className="odometer" data-count="100">
                     00
                   </span>
-                  +
+                  %
                 </h2>
-                <span>Year of experience</span>
+                <span>Process Accuracy</span>
               </div>
             </div>
           </div>
@@ -77,7 +77,7 @@ export default function About() {
                   </div>
 
                   <div className="information">
-                    <span>Call us anytime</span>
+                    <span>Call us</span>
                     <a href="tel:+94761287897">
                       <h6 className="title">+94 761287897</h6>
                     </a>

@@ -63,10 +63,10 @@ export default function Services() {
               <h2 className="title rts-text-anime-style-1">
                 Sukan Operations Support Services
               </h2>
-              <p className="disc" style={{ maxWidth: 820, margin: "14px auto 0" }}>
+              {/* <p className="disc" style={{ maxWidth: 820, margin: "14px auto 0" }}>
                 Explore our services: telesales, back office, administration, online marketing,
                 and IT support including app and database solutions.
-              </p>
+              </p> */}
             </div>
           </div>
         </div>

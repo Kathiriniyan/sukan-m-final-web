@@ -7,7 +7,7 @@ import { useInView } from "react-intersection-observer";
 export default function CounterUp() {
   const { ref, inView } = useInView({
     threshold: 0.35,
-    triggerOnce: false, 
+    triggerOnce: false,
   });
 
   const sectionStyle: React.CSSProperties = {
@@ -23,11 +23,36 @@ export default function CounterUp() {
 
   const runKey = inView ? "run" : "stop";
 
+  // Updated data with a 'symbol' field for mixed suffixes (+ or %)
   const counters = [
-    { id: "11", end: 11, label: "Corporate Partners", icon: "/assets/images/counterup/icon/01.svg" },
-    { id: "300", end: 300, label: "Successful Shipments", icon: "/assets/images/counterup/icon/02.svg" },
-    { id: "30", end: 30, label: "Skilled Experts", icon: "/assets/images/counterup/icon/03.svg" },
-    { id: "120", end: 120, label: "Happy Clients", icon: "/assets/images/counterup/icon/04.svg" },
+    { 
+      id: "1", 
+      end: 100, 
+      symbol: "%", 
+      label: "Execution Reliability", 
+      icon: "/assets/images/counterup/icon/01.svg" 
+    },
+    { 
+      id: "2", 
+      end: 5, 
+      symbol: "+", 
+      label: "Core Service Verticals", 
+      icon: "/assets/images/counterup/icon/02.svg" 
+    },
+    { 
+      id: "3", 
+      end: 100, 
+      symbol: "%", 
+      label: "Data Accuracy Focus", 
+      icon: "/assets/images/counterup/icon/03.svg" 
+    },
+    { 
+      id: "4", 
+      end: 24, 
+      symbol: "+", 
+      label: "Global Time Zone Support", 
+      icon: "/assets/images/counterup/icon/04.svg" 
+    },
   ];
 
   return (
@@ -56,7 +81,8 @@ export default function CounterUp() {
                       ) : (
                         "00"
                       )}
-                      +
+                      {/* Dynamic symbol rendering */}
+                      {item.symbol}
                     </h2>
                     <p className="disc mb-0">{item.label}</p>
                   </div>

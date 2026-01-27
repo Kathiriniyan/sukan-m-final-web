@@ -20,11 +20,11 @@ export default function AboutPage() {
           <div className="row">
             <div className="col-lg-12">
               <div className="title-area-left">
-                <span className="pre">About Invena</span>
+                <span className="pre">About Sukan Marketing</span>
                 <span className="bg-title">About Us</span>
                 <h1 className="title rts-text-anime-style-1">
-                  Smart and effective <br />
-                  business agency.
+                  Your Dedicated Partner <br />
+                  For Global Growth.
                 </h1>
               </div>
             </div>

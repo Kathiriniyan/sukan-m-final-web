@@ -79,7 +79,7 @@ export default function Contact() {
               <div className="title-style-two mb--40 left">
                 <span className="bg-content">Hello</span>
                 <span className="pre">Make An Appointment</span>
-                <h2 className="title">Request a enquiry</h2>
+                <h2 className="title">Request an enquiry</h2>
               </div>
 
               <form onSubmit={handleSubmit}>
