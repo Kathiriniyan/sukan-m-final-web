@@ -3,7 +3,7 @@ import CareerDetails from "./CareerDetails";
 import { careers } from "@/lib/careers";
 
 export const metadata: Metadata = {
-  title: "Career | Sukan M",
+  title: "Career | Sukan Marketing",
   description: "Career with Sukan Marketing",
 };
 

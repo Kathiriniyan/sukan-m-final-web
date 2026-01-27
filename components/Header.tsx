@@ -12,7 +12,7 @@ const Header = () => {
                         <div className="col-lg-12">
                             <div className="header-top-one-wrapper">
                                 <div className="right">
-                                    <p>Are you ready to grow up your business? <Link href="/contact">Contact Us <i
+                                    <p>Let's scale your business together. <Link href="/contact">Contact Us <i
                                         className="fa-solid fa-arrow-right"></i></Link></p>
                                 </div>
                                 <div className="left">
@@ -55,9 +55,9 @@ const Header = () => {
                                             <li className="main-nav">
                                                 <Link href="/careers">Careers</Link>
                                             </li>
-                                            <li className="main-nav">
+                                            {/* <li className="main-nav">
                                                 <Link href="/blog">Blog</Link>
-                                            </li>
+                                            </li> */}
                                         </ul>
                                     </div>
 

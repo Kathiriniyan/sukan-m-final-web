@@ -16,7 +16,7 @@ const Sidebar = () => {
                 </Link>
                 <div className="body d-none d-xl-block">
                     <p className="disc">
-                        We will manage for you how all sets this business goal organizing accounts and tracking warehouse. All sets this business goal organizing accounts.
+                        "Sukan Marketing takes charge of your critical workflows. We manage your accounts and warehouse tracking with precision, ensuring your back-office operations directly support your business targets."
                     </p>
                     <div className="get-in-touch">
                         {/* title */}
@@ -78,9 +78,9 @@ const Sidebar = () => {
                         <li>
                             <Link href="/careers" className="main">Careers</Link>
                         </li>
-                        <li>
+                        {/* <li>
                             <Link href="/blog" className="main">Blog</Link>
-                        </li>
+                        </li> */}
                     </ul>
                 </nav>
 

@@ -15,7 +15,10 @@ header("Access-Control-Allow-Methods: POST");
 header("Content-Type: application/json; charset=UTF-8");
 
 // 3. YOUR CREDENTIALS (I have filled these in for you)
-
+$smtp_host = 'smtp.hostinger.com';
+$smtp_user = 'website@sukan-m.com';
+$smtp_pass = 'Wb@9102@#12'; 
+$receiver_email = 'info@sukan-m.com';
 
 // 4. Handle the Request
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
