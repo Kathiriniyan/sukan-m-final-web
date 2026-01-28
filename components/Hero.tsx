@@ -15,9 +15,9 @@ const Hero = () => {
                                     <Image src="/assets/images/banner/icon/star.svg" alt="star" width={20} height={20} className="inline-block mr-2" />
                                     Think. Improve. Expand. Repeat.
                                 </p>
-                                <h1 className="title rts-text-anime-style-1 font-bold">Connecting Local Operations with Global Efficiency.</h1>
+                                <h1 className="title rts-text-anime-style-1 font-bold">Connecting Local Operations to Global Efficiency.</h1>
                                 <p className="disc banner-para text-gray-500">
-                                    As the dedicated operational backbone for our partners, we provide end-to-end support across sales, back-office processes, administration, marketing, and IT to ensure daily operations run smoothly across global teams.
+                                    As the dedicated operational backbone for our partners, we provide end-to-end support across sales, back-office operations, administration, marketing, and IT—ensuring daily operations run smoothly across global teams.
                                 </p>
                                 <Link href="/contact" className="rts-btn btn-primary color-h-black inline-block mt-4">Get in touch..!</Link>
                             </div>

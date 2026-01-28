@@ -29,11 +29,11 @@ export default function Footer() {
 
               <div className="quick-link-inner">
                 <ul className="links">
-                  <li>
+                  {/* <li>
                     <Link href="/contact">
                       <i className="far fa-arrow-right"></i> Forum Support
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link href="/contact">
                       <i className="far fa-arrow-right"></i> Help &amp; FAQ
@@ -57,16 +57,16 @@ export default function Footer() {
                       <i className="far fa-arrow-right"></i> About Us
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="/services">
                       <i className="far fa-arrow-right"></i> Projects
                     </Link>
-                  </li>
-                  <li>
+                  </li> */}
+                  {/* <li>
                     <Link href="/blog">
                       <i className="far fa-arrow-right"></i> Blog
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link href="/services">
                       <i className="far fa-arrow-right"></i> Service
@@ -222,7 +222,7 @@ export default function Footer() {
             <div className="col-12">
               <div className="text-center">
                 <p>
-                  Sukan M - Copyright {new Date().getFullYear()}. All rights reserved.
+                  © {new Date().getFullYear()}. Sukan Marketing All rights reserved.
                 </p>
               </div>
             </div>

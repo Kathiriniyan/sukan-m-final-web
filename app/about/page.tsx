@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import About from "@/components/About";
 import BusinessGoal from "@/components/BusinessGoal";
+import Process from "@/components/Process";
 
 export const metadata: Metadata = {
   title: "About | Sukan M",
@@ -14,7 +15,6 @@ export default function AboutPage() {
   return (
     <main>
       <Header />
-
       <section className="rts-breadcrumb-area pt-20 xl:pt-60">
         <div className="container">
           <div className="row">
@@ -49,6 +49,7 @@ export default function AboutPage() {
           />
         </div>
       </section>
+      
 
       <section className="about-invena-large-image lg:pt-20 sm:mb-20">
         <div className="container">
@@ -65,6 +66,8 @@ export default function AboutPage() {
         </div>
       </section>
       <About />
+      <Process/>
+      
       <BusinessGoal />
       <Footer />
     </main>

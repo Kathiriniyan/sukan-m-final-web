@@ -12,7 +12,7 @@ const Header = () => {
                         <div className="col-lg-12">
                             <div className="header-top-one-wrapper">
                                 <div className="right">
-                                    <p>Let's scale your business together. <Link href="/contact">Contact Us <i
+                                    <p>Let's scale your business together. <Link href="/contact">Contact us <i
                                         className="fa-solid fa-arrow-right"></i></Link></p>
                                 </div>
                                 <div className="left">

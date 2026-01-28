@@ -41,7 +41,7 @@ export default function BusinessGoal() {
                 <span className="bg-content">Business Goal</span>
                 <span className="pre">GLOBAL OPERATIONS HUB</span>
                 <h2 className="title rts-text-anime-style-1">
-                  Optimising daily operations for growing companies
+                  Optimizing daily operations for growing companies
                 </h2>
               </div>
 
@@ -57,9 +57,7 @@ export default function BusinessGoal() {
                 <div className="information">
                   <h4 className="title">Integrated Operations & Administration</h4>
                   <p className="disc">
-                    We handle essential operational tasks across sales, back
-                    office, administration, marketing, and IT—providing
-                    structure, clarity, and dependable execution.
+                    We handle essential operational tasks across sales, back-office operations, administration, marketing, and IT—providing structure, clarity, and dependable execution.
                   </p>
                 </div>
               </div>
@@ -76,9 +74,7 @@ export default function BusinessGoal() {
                 <div className="information">
                   <h4 className="title">Worldwide Support Across Time Zones</h4>
                   <p className="disc">
-                    Our team operates across global time zones, ensuring
-                    continuous support, fast response times, and smooth
-                    coordination between teams and systems.
+                    Our team operates across global time zones, ensuring continuous support, fast response times, and smooth coordination between teams and systems.
                   </p>
                 </div>
               </div>

@@ -6,8 +6,10 @@ import { careers } from "@/lib/careers";
 
 export const metadata: Metadata = {
   title: "Career | Sukan M",
-  description: "Join Sukan Marketing. We are hiring for Sales, Back Office and Planning, Accounts, Marketing, Secretary, and IT roles (Python, Data, Cloud). ",
-  keywords: "Sukan Marketing vacancies, telesales job, back office job, python developer job, data engineer job, cloud engineer job",
+  description:
+    "Join Sukan Marketing. We are hiring for Sales, Back Office and Planning, Accounts, Marketing, Secretary, and IT roles (Python, Data, Cloud). ",
+  keywords:
+    "Sukan Marketing vacancies, telesales job, back office job, python developer job, data engineer job, cloud engineer job",
 };
 
 export default function CareersPage() {
@@ -23,16 +25,30 @@ export default function CareersPage() {
               <div className="title-area-left">
                 <span className="pre">Join our team</span>
                 <span className="bg-title">Career</span>
-                <h1 className="title rts-text-anime-style-1">Career With Sukan Marketing</h1>
+                <h1 className="title rts-text-anime-style-1">
+                  Careers at Sukan Marketing
+                </h1>
               </div>
             </div>
           </div>
         </div>
 
         <div className="shape-area">
-          <img src="/assets/images/about/shape/01.png" alt="shape" className="one" />
-          <img src="/assets/images/about/shape/02.png" alt="shape" className="two" />
-          <img src="/assets/images/about/shape/03.png" alt="shape" className="three" />
+          <img
+            src="/assets/images/about/shape/01.png"
+            alt="shape"
+            className="one"
+          />
+          <img
+            src="/assets/images/about/shape/02.png"
+            alt="shape"
+            className="two"
+          />
+          <img
+            src="/assets/images/about/shape/03.png"
+            alt="shape"
+            className="three"
+          />
         </div>
       </section>
 
@@ -74,47 +90,44 @@ export default function CareersPage() {
                 >
                   <div className="left-side">
                     <h4
-  className="
-    flex flex-wrap items-center gap-2 sm:gap-3
-    font-semibold text-lg sm:text-xl
-    text-white leading-snug
-  "
->
-  {/* TITLE */}
-  <span
-    className="
-      block
-      max-w-full
-      break-words
-      line-clamp-2
-      sm:line-clamp-1
-      
-    "
-  >
-    {job.title}
-  </span>
+                      className="
+                        flex flex-wrap items-center gap-2 sm:gap-3
+                        font-semibold text-lg sm:text-xl
+                        text-white leading-snug
+                      "
+                    >
+                      {/* TITLE */}
+                      <span
+                        className="
+                          block
+                          max-w-full
+                          break-words
+                          line-clamp-2
+                          sm:line-clamp-1
+                        "
+                      >
+                        {job.title}
+                      </span>
 
-  {/* TAG */}
-  {job.tag && (
-    <span
-      className="
-        inline-flex items-center
-        rounded-xl
-        bg-amber-500/15
-        px-3 py-1
-        text-[11px] sm:text-sm
-        font-semibold uppercase tracking-wide
-        text-amber-400
-        whitespace-nowrap
-        shrink-0
-      "
-    >
-      {job.tag}
-    </span>
-  )}
-</h4>
-
-
+                      {/* TAG */}
+                      {job.tag && (
+                        <span
+                          className="
+                            inline-flex items-center
+                            rounded-xl
+                            bg-amber-500/15
+                            px-3 py-1
+                            text-[11px] sm:text-sm
+                            font-semibold uppercase tracking-wide
+                            text-amber-400
+                            whitespace-nowrap
+                            shrink-0
+                          "
+                        >
+                          {job.tag}
+                        </span>
+                      )}
+                    </h4>
 
                     <div className="bottom mt-3">
                       <div className="single">
@@ -132,18 +145,13 @@ export default function CareersPage() {
                     </div>
                   </div>
 
-                  <div className="right-side">
+                  {/* ✅ Only change: desktop right align for Apply button */}
+                  <div className="right-side flex md:justify-end">
                     <div className="bottom">
-                      <div className="single">
-                        <p>Apply Deadline</p>
-                        <span>{job.deadline}</span>
-                      </div>
-                      <div className="single">
-                        <p>Salary</p>
-                        <span>{job.salary}</span>
-                      </div>
-
-                      <Link href={`/careers/${job.slug}`} className="rts-btn btn-primary">
+                      <Link
+                        href={`/careers/${job.slug}`}
+                        className="rts-btn btn-primary"
+                      >
                         Apply Now
                       </Link>
                     </div>
@@ -163,48 +171,90 @@ export default function CareersPage() {
             <div className="col-lg-12">
               <div className="title-style-five center mb--40">
                 <span className="pre">Gallery</span>
-                <h2 className="title rts-text-anime-style-1">Life At Sukan Marketing</h2>
+                <h2 className="title rts-text-anime-style-1">
+                  Life At Sukan Marketing
+                </h2>
               </div>
             </div>
           </div>
 
           <div className="row g-5 mt--5">
             <div className="col-lg-4 offset-lg-1">
-              <a href="/assets/images/gallery/11.webp" className="gallery-image" data-animation="fadeInUp" data-delay="0.1">
+              <a
+                href="/assets/images/gallery/11.webp"
+                className="gallery-image"
+                data-animation="fadeInUp"
+                data-delay="0.1"
+              >
                 <div className="thumbnail">
-                  <img src="/assets/images/gallery/11.webp" alt="gallery-image" />
+                  <img
+                    src="/assets/images/gallery/11.webp"
+                    alt="gallery-image"
+                  />
                 </div>
               </a>
             </div>
 
             <div className="col-lg-6">
-              <a href="/assets/images/gallery/12.webp" className="gallery-image" data-animation="fadeInUp" data-delay="0.2">
+              <a
+                href="/assets/images/gallery/12.webp"
+                className="gallery-image"
+                data-animation="fadeInUp"
+                data-delay="0.2"
+              >
                 <div className="thumbnail">
-                  <img src="/assets/images/gallery/12.webp" alt="gallery-image" />
+                  <img
+                    src="/assets/images/gallery/12.webp"
+                    alt="gallery-image"
+                  />
                 </div>
               </a>
             </div>
 
             <div className="col-lg-4">
-              <a href="/assets/images/gallery/13.webp" className="gallery-image" data-animation="fadeInUp" data-delay="0.3">
+              <a
+                href="/assets/images/gallery/13.webp"
+                className="gallery-image"
+                data-animation="fadeInUp"
+                data-delay="0.3"
+              >
                 <div className="thumbnail">
-                  <img src="/assets/images/gallery/13.webp" alt="gallery-image" />
+                  <img
+                    src="/assets/images/gallery/13.webp"
+                    alt="gallery-image"
+                  />
                 </div>
               </a>
             </div>
 
             <div className="col-lg-4">
-              <a href="/assets/images/gallery/14.webp" className="gallery-image" data-animation="fadeInUp" data-delay="0.4">
+              <a
+                href="/assets/images/gallery/14.webp"
+                className="gallery-image"
+                data-animation="fadeInUp"
+                data-delay="0.4"
+              >
                 <div className="thumbnail">
-                  <img src="/assets/images/gallery/14.webp" alt="gallery-image" />
+                  <img
+                    src="/assets/images/gallery/14.webp"
+                    alt="gallery-image"
+                  />
                 </div>
               </a>
             </div>
 
             <div className="col-lg-4">
-              <a href="/assets/images/gallery/15.webp" className="gallery-image" data-animation="fadeInUp" data-delay="0.5">
+              <a
+                href="/assets/images/gallery/15.webp"
+                className="gallery-image"
+                data-animation="fadeInUp"
+                data-delay="0.5"
+              >
                 <div className="thumbnail">
-                  <img src="/assets/images/gallery/15.webp" alt="gallery-image" />
+                  <img
+                    src="/assets/images/gallery/15.webp"
+                    alt="gallery-image"
+                  />
                 </div>
               </a>
             </div>

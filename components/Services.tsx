@@ -59,7 +59,7 @@ export default function Services() {
           <div className="col-lg-12">
             <div className="title-style-two center">
               <span className="bg-content">Services</span>
-              <span className="pre">our Service</span>
+              <span className="pre">our Services</span>
               <h2 className="title rts-text-anime-style-1">
                 Sukan Operations Support Services
               </h2>
@@ -94,9 +94,7 @@ export default function Services() {
                             <div className="information">
                               <h5 className="title">Sales (Telesales)</h5>
                               <p className="disc">
-                                We support your sales pipeline with structured outreach and follow-up.
-                                Our team handles lead calling and qualification, appointment setting,
-                                customer follow-up and reactivation, plus CRM updates and reporting.
+                                We support your sales pipeline with structured outreach and follow-ups. Our team handles lead calling and qualification, appointment setting, customer follow-up and retention, as well as CRM updates and reporting.
                               </p>
                               <Link href="/services" className="arrow-right">
                                 <i className="fa-sharp fa-solid fa-arrow-right"></i>
@@ -118,11 +116,9 @@ export default function Services() {
                               />
                             </div>
                             <div className="information">
-                              <h5 className="title">Back Office</h5>
+                              <h5 className="title">Back-Office</h5>
                               <p className="disc">
-                                We keep orders and communication on track by supporting order processing,
-                                customer updates and confirmations, document checks with data accuracy,
-                                and smooth coordination with internal teams.
+                                We keep orders and communications on track by supporting order processing, customer updates and confirmations, document checks for data accuracy, and smooth coordination with internal teams.
                               </p>
                               <Link href="/services" className="arrow-right">
                                 <i className="fa-sharp fa-solid fa-arrow-right"></i>
@@ -146,9 +142,7 @@ export default function Services() {
                             <div className="information">
                               <h5 className="title">Administration</h5>
                               <p className="disc">
-                                We maintain control and clarity in your daily operations through data entry
-                                and record keeping, invoicing support and documentation, weekly and monthly
-                                reporting, plus process documentation and checklists.
+                                We maintain control and clarity in your daily operations through data entry and record-keeping, invoicing support and documentation, weekly and monthly reporting, as well as process documentation and checklists.
                               </p>
                               <Link href="/services" className="arrow-right">
                                 <i className="fa-sharp fa-solid fa-arrow-right"></i>

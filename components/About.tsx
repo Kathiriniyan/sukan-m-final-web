@@ -45,14 +45,15 @@ export default function About() {
                 <span className="bg-content">About Us</span>
                 <span className="pre">More About Us</span>
                 <h2 className="title rts-text-anime-style-1">
-                  Powering Global Operations at Scale
+                  Powering global operations at scale.
                 </h2>
               </div>
 
               <div className="about-between-wrapper">
                 <p className="disc">
-                  Sukan Marketing serves as a reliable operations hub, supporting the complete operational lifecycle—from sales and administration to marketing execution and IT systems. We deliver precision, structure, and dependable execution so our partners can operate efficiently worldwide.
+                  Sukan Marketing provides structured worldwide operations support across sales, back-office functions, administration, marketing, and IT—helping businesses run smoothly, accurately, and at scale.
                 </p>
+
 
                 <div className="check-wrapper-area">
                   <div className="single-check">

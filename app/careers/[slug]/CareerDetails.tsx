@@ -129,7 +129,7 @@ export default function CareerDetails() {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="title-area-left">
-                                <span className="pre">Career Sukan M</span>
+                                <span className="pre">Careers at Sukan Marketing</span>
                                 <span className="bg-title">Career</span>
                                 <h1 className="title rts-text-anime-style-1">{job.title}</h1>
                                 <p className="disc mt-3">{job.intro}</p>

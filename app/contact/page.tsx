@@ -91,7 +91,7 @@ export default function ContactPage() {
                       <i className="fa-solid fa-phone"></i>
                     </div>
                     <div className="information-wrapper">
-                      <span>Call Us 24/7</span>
+                      <span>Call Us</span>
                       <a href="tel:+94761287897">
                         <h6 className="title">+94 761287897</h6>
                       </a>
