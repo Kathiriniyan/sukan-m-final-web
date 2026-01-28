@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sukan Marketing | Worldwide Operations Support for Companies",
+  title: "Sukan Marketing",
   description: "Sukan Marketing provides worldwide operations support - sales, back office, administration, online marketing, and IT support - so your business runs smoothly.",
   keywords: "worldwide operations support, back-office support, telesales suppo",
   icons: { icon: "/assets/images/fav.svg" },
