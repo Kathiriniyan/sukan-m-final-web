@@ -15,10 +15,10 @@ header("Access-Control-Allow-Methods: POST");
 header("Content-Type: application/json; charset=UTF-8");
 
 // 3. SMTP Credentials
-// $smtp_host = 'smtp.hostinger.com';
-// $smtp_user = 'website@sukan-m.com';
-// $smtp_pass = 'Wb@9102@#12'; 
-// $receiver_email = 'info@sukan-m.com';
+// $smtp_host =
+// $smtp_user =
+// $smtp_pass =
+// $receiver_email =
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
