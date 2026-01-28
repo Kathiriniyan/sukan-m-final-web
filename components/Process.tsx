@@ -35,6 +35,8 @@ export default function Process() {
           title: "Understand Your Workflow",
           icon: FaClipboardList,
           inner:
+            "",
+          descripition:
             "We analyse your processes, challenges, and daily operational needs.",
         },
         {
@@ -42,6 +44,8 @@ export default function Process() {
           title: "Build Clear Structure",
           icon: FaCogs,
           inner:
+            "two",
+          descripition:
             "We create checklists, routines, and workflows for consistent execution.",
         },
         {
@@ -49,6 +53,8 @@ export default function Process() {
           title: "Execute Daily Support",
           icon: FaTasks,
           inner:
+            "three",
+          descripition:
             "Our team handles operations accurately across sales, admin, and IT.",
         },
         {
@@ -56,6 +62,8 @@ export default function Process() {
           title: "Improve & Scale",
           icon: FaChartLine,
           inner:
+            "four",
+          descripition:
             "We refine processes continuously to support growth and efficiency.",
         },
       ].map((step) => {
@@ -66,7 +74,7 @@ export default function Process() {
             key={step.id}
             className="rts-working-process-1 text-center group rts-jump__item"
           >
-            <div className="inner flex justify-center mb-6">
+            <div className={`inner ${step.inner} flex justify-center mb-6`}>
               <div className="icon bg-white p-6 rounded-full shadow-sm group-hover:shadow-md transition-all">
                 <Icon className="w-12 h-12 text-gray-800" />
               </div>
@@ -77,7 +85,7 @@ export default function Process() {
                 {step.title}
               </h6>
               <p className="disc text-gray-600 leading-relaxed">
-                {step.inner}
+                {step.descripition}
               </p>
             </div>
           </div>
